@@ -32,6 +32,12 @@ The source code (app/, components/, hooks/, lib/, public/, styles/) was original
 - `images.unoptimized: true` is set, meaning no `sharp` image optimization is used.
 - The `pnpm install` step warns about `sharp` build scripts being ignored — this is fine since unoptimized images are configured.
 
+### UX notes
+
+- The "Download" / "Download Free" buttons open a **support dialog** (donation modal with $5–$50 tiers) before allowing the download. The actual download link is a placeholder (`https://github.com/your-repo/scribble/releases`).
+- The typing demo in the hero section can be restarted by clicking "Watch Demo."
+- No automated test framework is configured (no Jest, Vitest, or Playwright).
+
 ### Package manager
 
 The project uses **pnpm** (lockfile: `pnpm-lock.yaml`). Do not use npm or yarn.
